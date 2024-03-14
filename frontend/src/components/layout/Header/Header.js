@@ -3,7 +3,6 @@ import { ReactNavbar } from "overlay-navbar";
 import logo from "../Header/logo.png";
 
 const options = {
-  
   burgerColorHover: "red",
   logo,
   logoWidth: "20vmax",
@@ -11,17 +10,14 @@ const options = {
   logoHoverSize: "10px",
   logoHoverColor: "#eb4034",
   link1Text: "Home",
-  link2Text: "Login",
-  link3Text:"Signup",
-  link4Text: "Search", 
-  link5Text: "About",
+  link2Text: "Search",
+  link3Text: "Samsung Store",
+  link4Text: "Instagram Handle",
   link1Url: "/",
-  link2Url: "/login",
-  link3Url:"/signup",
-  link4Url: "/search", 
-  link5Url: "/about",
+  link2Url: "/search",
+  link3Url: "https://www.samsung.com/in/smartphones/galaxy-s24-ultra/buy/?cid=in_pd_ppc_google_im-all-all-all-dtc_sales_samsung-allproducts-all-2023_eshop-text-search_01jan2023-na_1ur-501322l-2024-eshop-bau-search-cpc_pfm-688104537051-12512103039-127630421468-kwd-10020211-samsung-b--g--&gad_source=1&gclid=Cj0KCQjwncWvBhD_ARIsAEb2HW_E3cgUuadYLF-KLHGGPqSxHaXccmn9qcvUPgw2mLGV-d3BcyvEodAaAtF5EALw_wcB",
+  link4Url: "https://www.instagram.com/",
   link1Size: "1.3vmax",
-
   link1Color: "rgba(35, 35, 35,0.8)",
   nav1justifyContent: "flex-end",
   nav2justifyContent: "flex-end",
@@ -42,11 +38,15 @@ const options = {
 
 const Header = () => {
   return (
-    <div className="entire-page">
-      <ReactNavbar {...options} />
+    <div className="entire-page" style={{ backgroundColor: "blue" }}>
+      {/* Wrap ReactNavbar in a div and apply background color style */}
+      <div style={{ backgroundColor: "white" }}>
+        <ReactNavbar {...options} />
+      </div>
     </div>
   );
 };
+
 export default Header;
 
 

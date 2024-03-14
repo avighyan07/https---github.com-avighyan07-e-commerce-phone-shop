@@ -59,7 +59,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/api/v1/homeproducts");
+        const response = await axios.get("http://localhost:4005/api/v1/homeproducts");
         console.log("API Response:", response.data); // Log the API response
         setProducts(response.data.pds); // Access the 'pds' array
       } catch (error) {

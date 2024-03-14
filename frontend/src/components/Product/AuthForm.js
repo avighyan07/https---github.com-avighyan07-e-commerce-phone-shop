@@ -13,7 +13,7 @@ const AuthForm = ({ type }) => {
     const { name, email, password } = credentials;
 
     try {
-      const response = await fetch(`http://localhost:5000/${type}`, {
+      const response = await fetch(`http://localhost:4005/${type}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

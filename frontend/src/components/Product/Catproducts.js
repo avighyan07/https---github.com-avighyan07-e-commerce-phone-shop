@@ -25,7 +25,7 @@ const CatProducts = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:4000/api/v1/products`, {
+        const response = await axios.get(`http://localhost:4005/api/v1/products`, {
           params: {
             keyword: keyword,
             page: currentPage,

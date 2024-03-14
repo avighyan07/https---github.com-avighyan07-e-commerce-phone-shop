@@ -20,10 +20,7 @@ exports.registerUser = async (req, res, next) => {
       name,
       email,
       password,
-      avatar: {
-        public_id: "myCloud.public_id",
-        url: "myCloud.url",
-      },
+      
     });
 
 

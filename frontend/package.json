@@ -13,7 +13,6 @@
     "react-alert": "^7.0.3",
     "react-alert-template-basic": "^1.0.2",
     "react-dom": "^18.2.0",
-    
     "react-helmet": "^6.1.0",
     "react-icons": "^5.0.1",
     "react-rating-stars-component": "^2.2.0",
@@ -49,5 +48,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }

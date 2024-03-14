@@ -14,7 +14,7 @@ const Signup = () => {
       const { name, email, password } = credentials;
       
       try {
-        const response = await fetch('http://localhost:4000/api/v1/register', {
+        const response = await fetch('http://localhost:4005/api/v1/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
